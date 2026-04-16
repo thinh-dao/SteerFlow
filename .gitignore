@@ -1,0 +1,44 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# Jupyter
+.ipynb_checkpoints
+
+# Outputs
+outputs/
+output/
+feature/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Gradio
+*.gradio
+
+# Model weights
+*.safetensors
+*.ckpt
+*.bin

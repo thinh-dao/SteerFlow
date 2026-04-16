@@ -1,0 +1,35 @@
+[project]
+name = "SteerFlow"
+authors = [
+  { name = "Thinh Dao" },
+]
+description = "SteerFlow: Steerable Image Editing via Velocity-Controlled Flow Matching"
+readme = "README.md"
+requires-python = ">=3.10"
+dynamic = ["version"]
+dependencies = [
+  "torch >= 2.0.0",
+  "torchvision",
+  "einops",
+  "fire >= 0.6.0",
+  "huggingface-hub",
+  "safetensors",
+  "sentencepiece",
+  "transformers",
+  "tokenizers",
+  "protobuf",
+  "invisible-watermark",
+]
+
+[project.optional-dependencies]
+gradio = ["gradio"]
+all = ["SteerFlow[gradio]"]
+
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools>=64", "wheel", "setuptools_scm>=8"]
+
+[tool.setuptools_scm]
+write_to = "src/flux/_version.py"
+fallback_version = "0.0.0"
+version_scheme = "post-release"
