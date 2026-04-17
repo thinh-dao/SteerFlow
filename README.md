@@ -22,7 +22,7 @@ Recent advances in flow-based generative models have enabled training-free, text
 SteerFlow performs text-driven image editing by controlling the velocity field during the ODE denoising process of flow-matching models. The key idea is to:
 
 1. **Invert** the source image to noise via an Amortized Fixed-Point Solver that enforces velocity consistency across timesteps.
-2. Steer the **Denoising** Trajectory with the target prompt, blending source and target velocities via Trajectory _Interpolation_ and _Adaptive Masking_ to ensure source consistency and background preservation.
+2. Steer the **Denoising Trajectory** with the target prompt, blending source and target velocities via _Trajectory Interpolation_ and _Adaptive Masking_ to ensure source consistency and background preservation.
 
 <h1> Implementation </h1>
 
